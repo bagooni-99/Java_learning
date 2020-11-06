@@ -25,7 +25,7 @@ public abstract class GameObject {
 			return false;
 	}
 
-	protected abstract void move();
+	protected abstract void move(int x, int y);
 
 	protected abstract char getShape();
 
