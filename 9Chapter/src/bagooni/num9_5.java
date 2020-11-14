@@ -13,13 +13,13 @@ public class num9_5 extends JFrame {
 	
 	Container c  = getContentPane();
 	c.setLayout(new GridLayout(4,4));
-	JLabel L[] = new JLabel[16];
+	JLabel L = new JLabel();
 	
-	for(int i =0; i<L.length;i++) {
-		L[i]=new JLabel(Integer.toString(i));
-		L[i].setOpaque(true); // 배경색 변경가능
-		L[i].setBackground(color[i]);
-		c.add(L[i]);
+	for(int i =0; i<16;i++) {
+		L=new JLabel(Integer.toString(i));
+		L.setOpaque(true); // 배경색 변경가능
+		L.setBackground(color[i]);
+		c.add(L);
 	}
 	
 	setVisible(true);
